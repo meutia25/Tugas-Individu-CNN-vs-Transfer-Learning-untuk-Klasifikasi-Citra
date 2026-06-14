@@ -1,14 +1,14 @@
-# Implementasi dan Evaluasi CNN From Scratch serta Transfer Learning MobileNetV2 untuk Klasifikasi Citra Cats and Dogs
+# Implementasi dan Evaluasi CNN From Scratch serta Transfer Learning MobileNetV2 untuk Klasifikasi Citra
 
 ## Nama Mahasiswa
 
 * Nama: Meutia Mirah Asih
 * NIM: 452024618092
-* Program Studi: Informatika
+* Program Studi: Trknik Informatika
 
 ## Deskripsi Singkat Project
 
-Project ini bertujuan untuk membandingkan performa dua pendekatan Deep Learning, yaitu CNN From Scratch dan Transfer Learning menggunakan MobileNetV2, pada tugas klasifikasi citra kucing dan anjing (Cats vs Dogs). Evaluasi dilakukan menggunakan metrik accuracy, loss, grafik pelatihan, dan confusion matrix.
+Project ini bertujuan untuk membandingkan performa dua pendekatan Deep Learning, yaitu CNN From Scratch dan Transfer Learning menggunakan MobileNetV2. CNN From Scratch diimplementasikan menggunakan dataset CIFAR-10 yang terdiri dari 10 kelas objek, sedangkan Transfer Learning menggunakan MobileNetV2 diterapkan pada dataset Cats vs Dogs. Evaluasi dilakukan menggunakan metrik accuracy, loss, confusion matrix, serta visualisasi grafik pelatihan.
 
 ## Library yang Digunakan
 
@@ -17,6 +17,7 @@ Project ini bertujuan untuk membandingkan performa dua pendekatan Deep Learning,
 * Matplotlib
 * Scikit-Learn
 * Pandas
+* Seaborn
 
 ## Cara Menjalankan Notebook
 
@@ -28,7 +29,7 @@ Project ini bertujuan untuk membandingkan performa dua pendekatan Deep Learning,
 pip install -r requirements.txt
 ```
 
-4. Buka file notebook menggunakan Jupyter Notebook atau VS Code.
+4. Buka file notebook menggunakan Jupyter Notebook, VS Code, atau Google Colab.
 5. Jalankan seluruh cell secara berurutan.
 
 ## Struktur Folder Project
@@ -44,13 +45,13 @@ project/
 
 ## Ringkasan Hasil Eksperimen
 
-| Model                           | Accuracy Testing |
-| ------------------------------- | ---------------- |
-| CNN From Scratch                | 58,57%           |
-| Transfer Learning (MobileNetV2) | 64,29%           |
+| Model                           | Dataset      | Accuracy Testing             |
+| ------------------------------- | ------------ | ---------------------------- |
+| CNN From Scratch                | CIFAR-10     | (isi sesuai hasil pengujian) |
+| Transfer Learning (MobileNetV2) | Cats vs Dogs | 64,29%                       |
 
-Hasil eksperimen menunjukkan bahwa MobileNetV2 menghasilkan performa yang lebih baik dibandingkan CNN From Scratch pada dataset Cats and Dogs.
+Hasil eksperimen menunjukkan bahwa Transfer Learning menggunakan MobileNetV2 mampu memberikan performa yang baik pada dataset Cats vs Dogs, sedangkan CNN From Scratch digunakan untuk mempelajari klasifikasi multi-kelas pada dataset CIFAR-10.
 
 ## Kesimpulan Singkat
 
-Berdasarkan hasil pengujian, Transfer Learning menggunakan MobileNetV2 memberikan akurasi yang lebih tinggi, proses pelatihan yang lebih cepat, serta kemampuan generalisasi yang lebih baik dibandingkan CNN From Scratch. Oleh karena itu, Transfer Learning menjadi pendekatan yang lebih efektif untuk dataset dengan jumlah data terbatas.
+CNN From Scratch berhasil diterapkan pada dataset CIFAR-10 untuk melakukan klasifikasi 10 kelas objek. Transfer Learning menggunakan MobileNetV2 berhasil diterapkan pada dataset Cats vs Dogs dan memperoleh performa yang baik dengan proses pelatihan yang lebih efisien. Hasil ini menunjukkan bahwa Transfer Learning dapat menjadi solusi yang efektif ketika memanfaatkan model yang telah dilatih sebelumnya, sementara CNN From Scratch memberikan pemahaman yang lebih mendalam mengenai proses pembelajaran jaringan saraf konvolusional.
